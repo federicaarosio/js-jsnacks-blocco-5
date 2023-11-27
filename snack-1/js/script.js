@@ -76,10 +76,9 @@ const autoDiesel = auto.filter((automobile) => {
 });
 console.log(autoDiesel);
 
-
 //array con altre auto
 const altreAuto = auto.filter((automobile) => {
-    if(automobile.alimentazione !== "diesel" && "benzina") {
+    if(automobile.alimentazione !== "diesel" && automobile.alimentazione !== "benzina") {
         return true;
     }
 });
