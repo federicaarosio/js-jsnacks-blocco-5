@@ -83,3 +83,4 @@ const altreAuto = auto.filter((automobile) => {
     }
 });
 console.log(altreAuto);
+
