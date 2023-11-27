@@ -11,51 +11,76 @@ const auto = [
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "benzina"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "metano"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "elettrico"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "gpl"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "benzina"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "metano"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "elettrico"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "gpl"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "diesel"
     },
     {
         marca: "fiat",
         modello: "panda",
-        alimentazione: "benzina";
+        alimentazione: "gpl"
     },
 ];
+
+//array con auto a benzina
+const autoBenzina = auto.filter((automobile) => {
+    if(automobile.alimentazione === "benzina") {
+        return true;
+    }
+});
+console.log(autoBenzina);
+
+//array con auto a diesel
+const autoDiesel = auto.filter((automobile) => {
+    if(automobile.alimentazione === "diesel") {
+        return true;
+    }
+});
+console.log(autoDiesel);
+
+
+//array con altre auto
+const altreAuto = auto.filter((automobile) => {
+    if(automobile.alimentazione !== "diesel" && "benzina") {
+        return true;
+    }
+});
+console.log(altreAuto);
