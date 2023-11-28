@@ -12,3 +12,15 @@
         //rimuovo da tab
         //se la tab che rimuovo = activetab
             //activetab+1
+
+const allTabsOpen = {
+    tab: ["Facebook", "GitHub", "Gmail", "Instagram" ],
+    activeTab: 0
+}
+
+const socials = ["Facebook", "TikTok", "Instagram", "Youtube"];
+            
+const {tab} = allTabsOpen;
+console.log(tab)
+
+
