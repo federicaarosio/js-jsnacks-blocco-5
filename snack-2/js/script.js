@@ -10,27 +10,27 @@ const persone = [
     {
         nome: "Marta",
         cognome: "Lamperti",
-        eta: "22"
+        eta: 22
     },
     {
         nome: "Mattia",
         cognome: "Fossati",
-        eta: "14"
+        eta: 14
     },
     {
         nome: "Serena",
         cognome: "Rossi",
-        eta: "26"
+        eta: 26
     },
     {
         nome: "Giulio",
         cognome: "Ludovici",
-        eta: "52"
+        eta: 52
     },
     {
         nome: "Elena",
         cognome: "Barbieri",
-        eta: "30"
+        eta: 30
     },
 ]
 
