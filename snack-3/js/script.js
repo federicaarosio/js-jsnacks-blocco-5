@@ -13,14 +13,16 @@
         //se la tab che rimuovo = activetab
             //activetab+1
 
-const allTabsOpen = {
-    tab: ["Facebook", "GitHub", "Gmail", "Instagram" ],
-    activeTab: 0
+const browserWindow = {
+    "tab": ["Facebook", "GitHub", "Gmail", "Instagram", "Yahoo", "Twitter", "Bing"],
+    "activeTab": 0
 }
 
 const socials = ["Facebook", "TikTok", "Instagram", "Youtube"];
-            
-const {tab} = allTabsOpen;
-console.log(tab)
 
+browserWindow.tab = browserWindow.tab.filter((element) => {
+    if(!socials.includes(element.toLowerCase()))
+    return true;
+});
 
+console.log(browserWindow);

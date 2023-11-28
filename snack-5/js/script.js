@@ -4,27 +4,34 @@
 // punti fatti e falli subiti
 
 
-const volleyTeam = [
+const volleyTeams = [
     {nome: "Volley Torino",
-    puntifatti: 10,
-    falli: 20,
+    punti_fatti: getRandomNumber(200, 500),
+    falli: getRandomNumber(20, 50),
     },
     {nome: "Volley Napoli",
-    puntifatti: 10,
-    falli: 20,
+    punti_fatti: getRandomNumber(200, 500),
+    falli: getRandomNumber(20, 50),
     },
     {nome: "Volley Cagliari",
-    puntifatti: 10,
-    falli: 20,
+    punti_fatti: getRandomNumber(200, 500),
+    falli: getRandomNumber(20, 50),
     },
     {nome: "Volley Ancona",
-    puntifatti: 10,
-    falli: 20,
+    punti_fatti: getRandomNumber(200, 500),
+    falli: getRandomNumber(20, 50),
     },
 ]
 
-volleyTeam.forEach((team) => {
-    team.puntifatti = parseInt(Math.random() * 10) + 1
-    team.falli = parseInt(Math.random() * 10) + 1
-    console.log(team)
-})
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * max - min) + min;
+}
+
+//Nel caso volessi inserire da fuori i punteggi
+// volleyTeams.forEach((element) => {
+// 	element.punti_fatti = getRandomNumer(200, 500);
+// 	element.falli = getRandomNumer(200, 500);
+// }
+
+
+console.log(volleyTeams);
