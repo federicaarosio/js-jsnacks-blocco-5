@@ -7,24 +7,24 @@
 const volleyTeam = [
     {nome: "Volley Torino",
     puntifatti: 10,
-    fallisubiti: 20,
+    falli: 20,
     },
     {nome: "Volley Napoli",
     puntifatti: 10,
-    fallisubiti: 20,
+    falli: 20,
     },
     {nome: "Volley Cagliari",
     puntifatti: 10,
-    fallisubiti: 20,
+    falli: 20,
     },
     {nome: "Volley Ancona",
     puntifatti: 10,
-    fallisubiti: 20,
+    falli: 20,
     },
 ]
 
 volleyTeam.forEach((team) => {
-    team.puntifatti = parseInt(Math.random() * 100) + 1
+    team.puntifatti = parseInt(Math.random() * 10) + 1
     team.falli = parseInt(Math.random() * 10) + 1
     console.log(team)
 })
